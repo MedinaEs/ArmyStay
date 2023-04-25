@@ -1,0 +1,307 @@
+
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ArmyStay</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+
+<body class="w3-light-blue">
+
+<!-- Navigation bar with social media icons --> 
+
+
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>K-Poptars </b></h1>
+    <h6>Sean Bienvenidos ArmyStay </span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="./IMG/BTSxSKZ.jpeg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white"></h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>¿Quiénes son ellos?</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">INCRESAR</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>BTS</h3>
+          <h5>"Los Líderes de la Tercera Generación"
+              <span class="w3-opacity"></span>
+          </h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="./IMG/BTS.jpeg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong> 
+            Bangtan Sonyeondan es un grupo surcoreano formado en Seúl en 2010, que debutó el 13 de junio de 2013 bajo la compañía Big Hit Music.2​ Está compuesto por siete integrantes: Jin, Suga, J-Hope, RM, Jimin, V y Jungkook, quienes son los que coescriben y coproducen la mayor parte de su material discográfico. A pesar de haber sido creado con un estilo principalmente hip hop, ha llegado a incorporar una gran variedad de géneros en su repertorio musical.
+            
+            BTS es el artista con mayores ventas en la historia de Corea del Sur, con más de treinta millones en Gaon Music Chart, y mantiene el récord del álbum más vendido en ese país con Map of the Soul: 7. Así mismo, es el primer y único artista de habla no inglesa en ser nombrado como el artista global del año (2020) por la IFPI, en estar en la lista Top Touring Artists of the 2010s de Billboard y en dar un concierto —con todas las entradas agotadas— en el Estadio de Wembley. Por otro lado, la revista Time los incluyó en la portada de su edición internacional como «Líderes de la nueva generación» y han aparecido en varios de sus listados; estuvieron entre las 25 personas más influyentes en Internet, desde 2017 hasta 2019, y entre las 100 personas más influyentes en el mundo en 2019, en la que los apodaron «Príncipes del Pop».
+          </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="./IMG/Bogum.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Park Bogum <span class="w3-opacity w3-medium">May 3, 2019, 3:08 PM</span></h4>
+                <p>¡Me encanta su música! En especial DNA. 
+                  ¡Tae, espero que nos podamos reunir pronto!.  </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Stray Kids</h3>
+          <h5>Los Líderes de la Cuarta Generación <span class="w3-opacity"></span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="./IMG/SKZ.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p> Es un grupo de chicos que se formó en 2017 a través del programa de supervivencia homónimo de JYP Entertainment. Debutaron el 25 de marzo de 2018, originalmente con nueve miembros, sin embargo, un año después, uno de los miembros dejó la banda. Los ocho restantes son Bangchan (el mayor y líder del grupo), Lee Know (bailarín), Changbin (rapero), Hyunjin (bailarín), HAN (rapero), Felix (bailarín), Seungmin (vocalista) e I.N (vocalista y maknae, es decir, el miembro más joven). Su música es principalmente hip-hop y electrónica, pero suelen incursionar en otros géneros, como el rock, el pop y la lírica. A pesar de la creencia popular de que el éxito de la banda se debió a que pertenecen a una de las “grandes tres” agencias de K-Pop (SM, YG y JYP), eso no es más que un rumor infundado, ya que en realidad tuvieron un comienzo bastante difícil y, de hecho, tuvieron que trabajar muy duro para cumplir con los estándares de la empresa. Sin embargo, trabajaron exhaustivamente para superar los muchos obstáculos en su camino, y poco después su popularidad comenzó a aumentar.
+            Algunas de las razones de su éxito radican en que el grupo es autoproducido por su propia subunidad, 3RACHA, formada por Bangchan, Changbin y HAN, quienes participan en la composición, producción y/o escritura de las letras de todas sus canciones, y en lugar de seguir las tendencias actuales, prefieren seguir su propia narrativa. Cada uno de los miembros de 3RACHA tiene más de cien canciones acreditadas a su nombre, lo cual es especialmente impresionante, considerando que tienen tan sólo alrededor de 20 años de edad. Otro factor importante en su éxito es que, a pesar de que cada miembro tiene una posición asignada dentro de la banda, todos son bastante versátiles y pueden desempeñar cualquier posición a la perfección, en particular HAN, quien ha sido llamado un todoterreno y un as del K- Pop en varias ocasiones. Además, Stray Kids en su conjunto tiene un rango vocal más amplio que la mayoría de los otros grupos, con Lee Know capaz de alcanzar notas realmente agudas y Felix las realmente graves con una modulación increíble, lo cual es perfecto para la armonización. Lee Know también cuenta con más de diez años de experiencia en danza profesional, habiendo sido previamente bailarín de respaldo para BTS, y está a menudo involucrado en la creación de las coreografías de Stray Kids.
+          </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="./IMG/Wooyoung.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4> Jang WooYoung <span class="w3-opacity w3-medium">April 10, 2020, 8:46 PM</span></h4>
+                <p>¡Son increíbles! .</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="./IMG/Jackson.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Jackson Wang <span class="w3-opacity w3-medium">April 12, 2020, 7:11 PM</span></h4>
+                <p>Después de ganarles en Kinsgdom, me sorprendería que no te parecieran increíbles.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="./IMG/Momo.jpeg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Momo <span class="w3-opacity w3-medium">April 12, 2020, 9:52 PM</span></h4>
+                <p>Me alegra ver lo que han logrado. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="./IMG/Blackpink.jpg" alt="Increíble" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>Grupos que pueden interesarte</h4>
+          <p>Blackpink</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Otros curiosidades del K-pop</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="./IMG/Seo Tiji & Boys.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large"> ¿Cuál fué el primer grupo de K-pop?</span>
+            <br>
+            <span>Seo Taijin and Boys
+              El K-pop surgió a principios de la década de los 90, teniendo como precursor al grupo Seo Taijin and Boys, quienes propusieron una música y estilo inspirado en el pop estadounidenses, despertando el interés de un público acostumbrado al folk y al trot.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="./IMG/Inicio del K-pop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Originalmente fue a comienzos de los años 1990 pero principalmente si fue en Corea del Sur (aquellas raíces se remontan hasta los años 1960)</span>
+            <br>
+            <span>Inicios del K-pop</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="./IMG/Curiosidades del K-pop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Curiosidades del K-pop</span>
+            <br>
+            <span>Hacen transmiciones en vivo en donde interactúan con sus fan por medio de V LIVE. ♡Cada que sacan un nuevo album se llama comeback. ♡ Cada famdom de cada grupo tiene un nombre por ejemplo fans de BTS se llaman ARMY, EXO=EXO-LS, TWICE =ONCE, SHINEE=SHALOWS. ♡Existen cuatro generaciones de kpop.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="./IMG/ATEEZ.webp" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">ATEEZ</span>
+            <br>
+            <span>ATEEZ es una boyband surcoreana formada por KQ Entertainment en 2018. Conformada por ocho integrantes, Seonghwa, Yunho, Hongjoong (líder), San, Wooyoung, Mingi y Jongho, los chicos debutaron el 24 de octubre de 2018 con el mini álbum Treasure EP1: All to Zero y los MVs de Treasure y Pirate King.</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+     
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Etiquetas</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">K-Pop</span> Idol <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fandom</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Corea del Sur</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">VLive</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">ATEEZ</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">BTS</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Curiosidades</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Stray Kids</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="./IMG/Levanter-SKZ.jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="./IMG/Love Yourself-BTS" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="./IMG/Hellevator-SKZ.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="./IMG/DNA-BTS.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Descubre más curiosidades sobre el K-pop suscribiendote.</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribirse</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Ingresa con tu correo electrónico</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container " style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
